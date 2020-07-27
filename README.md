@@ -1,5 +1,5 @@
 # Ren'Py Project Template
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-BSD%200--Clause-orange.svg?style=flat-square)](https://opensource.org/licenses/0BSD) ![GitHub repo size](https://img.shields.io/github/repo-size/plasterbrain/Renpy-Template?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/plasterbrain?style=flat-square&logo=twitter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-BSD%200--Clause-orange.svg?style=flat-square)](https://opensource.org/licenses/0BSD) ![GitHub repo size](https://img.shields.io/github/repo-size/plasterbrain/RenpyTemplate?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/plasterbrain?style=flat-square&logo=twitter)
 
 This is a blank Ren'Py project template for people with more robust visual novel needs. It's mostly geared towards non-mobile games, though the mobile features haven't been gutted entirely.
 
