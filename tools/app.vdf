@@ -1,0 +1,16 @@
+"appbuild"
+{
+	"appid" "{APP ID}"
+	"desc" "{Comment about this build update!}"
+	"buildoutput" "..\output"
+	"contentroot" "..\content"
+	"setlive" "beta"
+	"preview" "1"
+	"local"	""
+	"depots"
+	{
+		"{WINDOWS DEPOT ID}"	"depotwin.vdf"
+		"{LINUX DEPOT ID}"	"depotlinux.vdf"
+		"{MAC DEPOT ID}"	"depotmac.vdf"
+	}
+}

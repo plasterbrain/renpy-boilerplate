@@ -1,0 +1,31 @@
+"DepotBuildConfig"
+{
+	"DepotID" "{MAC DEPOT ID}"
+	"contentroot" "{STEAMWORKS}/ContentBuilder/Content/{build.directory_name}"
+	"FileMapping"
+	{
+		"LocalPath" "*"
+		"DepotPath" "."
+		"recursive" "1"
+	}
+	"FileExclusion" "{build.executable_name}.sh"
+	"FileExclusion" "{build.executable_name}.exe"
+	"FileExclusion" "lib\\**"
+	"FileExclusion" "renpy\\**"
+	"FileExclusion" "game\\**"
+	"FileExclusion" ".itch.toml"
+	"FileExclusion" "Contents\\Resources\\autorun\\.itch.toml"
+	"FileExclusion" "Contents\\Resources\\autorun\\game\\developer\\**"
+	"FileExclusion" "Contents\\Resources\\autorun\\game\\saves\\**"
+	"FileExclusion" "Contents\\Resources\\autorun\\game\\cache\\**"
+	"FileExclusion" "Contents\\Resources\\autorun\\screenshots\\**"
+	"FileExclusion" "Contents\\Resources\\autorun\\log.txt"
+	"FileExclusion" "Contents\\Resources\\autorun\\traceback.txt"
+	"FileExclusion" "Contents\\Resources\\autorun\\errors.txt"
+
+	"FileProperties"
+	{
+		"LocalPath" "Contents\\Resources\\autorun\\game\\saves\\**"
+		"Attributes" "userconfig"
+	}
+}

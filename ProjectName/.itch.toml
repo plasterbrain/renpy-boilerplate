@@ -1,0 +1,31 @@
+[[actions]]
+name = "play"
+path = "game.exe"
+platform = "windows"
+scope = "profile:me"
+sandbox = true
+#args = ["/t", "/i", "/a", "/l=of-arguments"]
+
+[[actions]]
+name = "play"
+path = "game.app"
+platform = "osx"
+scope = "profile:me"
+sandbox = true
+#args = ["--that", "--is", "--a", "lot=of-arguments"]
+
+[[actions]]
+name = "play"
+path = "game.sh"
+platform = "linux"
+scope = "profile:me"
+sandbox = true
+#args = ["--that", "--is", "--a", "lot=of-arguments"]
+
+#[[actions]]
+#name = "manual"
+#path = "readme.html"
+
+#[[actions]]
+#name = "forums"
+#path = "https://username.itch.io/game/community"

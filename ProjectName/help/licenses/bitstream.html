@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Bitstream Vera License</title>
+	<style>
+		body {
+		  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+		  max-width: 800px;
+		  margin: 0 auto;
+		  padding: 1em;
+		}
+
+		li {
+		  margin-bottom: 1em;
+		}
+
+		.caps {
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bitstream Vera License</h1>
+	<hr>
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license ("Fonts") and associated documentation files (the "Font Software"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions:</p>
+	<ul>
+		<li>The above copyright and trademark notices and this permission notice shall be included in all copies of one or more of the Font Software typefaces.</li>
+		<li>The Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing either the words "<span class="word1">Bitstream</span>" or the word "<span class="word2">Vera</span>".</li>
+		<li>This License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the "<span class="word1">Bitstream</span> <span class="word2">Vera</span>" names.</li>
+		<li>The Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself.</li>
+	</ul>
+	<p class="caps">The font software is provided "as is", without warranty of any kind, express or implied, including but not limited to any warranties of merchantability, fitness for a particular purpose and non-infringement of copyright, patent, trademark, or other right. In no event shall <span class="org">Bitstream or the Gnome Foundation</span> be liable for any claim, damages or other liability, including any general, special, indirect, incidental, or consequential damages, whether in an action of contract, tort or otherwise, arising from, out of the use or inability to use the font software or from other dealings in the font software.</p>
+
+	<p>Except as contained in this notice, the name or names of <span id="orgnames">Bitstream Inc., Gnome, and the Gnome Foundation</span> shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from <span class="org">Bitstream or the Gnome Foundation</span>. For further information, contact: <span id="contact">fonts@gnome.org</span>.</p>
+	<script>
+		/* https://jennamolby.com/how-to-display-dynamic-content-on-a-page-using-url-parameters */
+		function getParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		function setOneElement(idname, valuename) {
+			if (!valuename) valuename = idname;
+			valuename = getParameterByName(valuename);
+			if (!valuename) return null;
+
+			document.getElementById(idname).innerHTML = valuename;
+			return;
+		}
+		function setAllElements(classname, valuename) {
+			if (!valuename) valuename = classname;
+			valuename = getParameterByName(valuename);
+			if (!valuename) return null;
+
+			var elements = document.getElementsByClassName(classname);
+			for (var i = 0; i < elements.length; ++i) {
+			    var item = elements[i];
+			    item.innerHTML = valuename;
+			}
+			return;
+		}
+		setOneElement('orgnames');
+		setOneElement('contact');
+		setAllElements('word1');
+		setAllElements('word2');
+		setAllElements('org');
+	</script>
+</body>
+
+</html>

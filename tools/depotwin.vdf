@@ -1,0 +1,28 @@
+"DepotBuildConfig"
+{
+	"DepotID" "{WNIDOWS DEPOT ID}"
+	"contentroot" "{STEAMWORKS}/ContentBuilder/Content/{build.directory_name}"
+	"FileMapping"
+	{
+		"LocalPath" "*"
+		"DepotPath" "."
+		"recursive" "1"
+	}
+	"FileExclusion" "{build.executable_name}.sh"
+	"FileExclusion" "{build.executable_name}.app"
+	"FileExclusion" "lib\\linux**"
+	"FileExclusion" ".itch.toml"
+	"FileExclusion" "game\\developer\\**"
+	"FileExclusion" "game\\saves\\**"
+	"FileExclusion" "game\\cache\\**"
+	"FileExclusion" "screenshots\\**"
+	"FileExclusion" "log.txt"
+	"FileExclusion" "traceback.txt"
+	"FileExclusion" "errors.txt"
+
+	"FileProperties"
+	{
+		"LocalPath" "game\\saves\\**"
+		"Attributes" "userconfig"
+	}
+}

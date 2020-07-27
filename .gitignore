@@ -1,0 +1,22 @@
+# Ren'Py Data
+**.rpyc
+**.bak
+**.rpyb
+**.save
+persistent
+ProjectName/screenshots/**.png
+_latest.json
+project.json
+
+# Logs
+log.txt
+errors.txt
+memory.txt
+traceback.txt
+styles.txt
+image_cache.txt
+dialogue.*
+
+# Stuff I might add later!
+tools/unix/resize.sh
+tools/config.json

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{Your Game} — Readme</title>
+    <link rel="stylesheet" href="help/css/spectre.css" type="text/css">
+    <link rel="stylesheet" href="help/css/style.css" type="text/css" />
+	<!--[if lt IE 9]>
+		<script src="help/js/html5shiv.min.js"></script>
+		<script src="help/js/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="body-index">
+    <a class="text-assistive" href="#main">Skip to Content</a>
+    <aside id="sidebar" class="sidebar">
+        <nav id="toc" class="sidebar__menu" aria-labeledby="sidebar__title">
+            <h2 class="sidebar__title">Contents</h2>
+        </nav>
+    </aside>
+    <main id="main" class="main">
+        <header role="banner">
+            <h1 id="title">{Your Game} Manual</h1>
+        </header>
+        <section>
+			<span class="text-assistive"><h1>Introduction</h1></span>
+			<p>{Manual introduction text goes here. You could put a version number in the heading, too, if you want.}</p>
+        </section>
+        <section>
+			<h1>Basics</h1>
+			<div class="card">
+				<p class="card-body"><strong>Content Warning:</strong> {Add info about sensitive content here, if applicable. This could be anything from strong adult themes to jump scares.}</p>
+			</div>
+
+			<p>{You can summarize what your game is about and what gameplay is like here. The Basics section might also be a good place to place character profiles and info about the setting. You could also do an in-depth overview of the in-game menus or give instructions for any unusual features, such as minigames.}</p>
+
+            <h2>Controls</h2>
+			Use your mouse or the arrow keys to navigate through menus.
+            <ul>
+                <li><strong>Advance text</strong> - <kbd>Space</kbd>, <kbd>Enter</kbd>, left click</li>
+                <li><strong>Select choice</strong> - <kbd>Enter</kbd>, left click</li>
+                <li><strong>Rollback</strong> - <kbd>PgUp</kbd>, scroll up</li>
+                <li><strong>Rollforward</strong> - <kbd>PgDn</kbd>, scroll down</li>
+				<li><strong>Skip</strong> - Hold <kbd>Ctrl</kbd></li>
+                <li><strong>Toggle Skipping</strong> - <kbd>Tab</kbd></li>
+				<li><strong>Hide Interface</strong> - <kbd>h</kbd>, middle click</li>
+				<li><strong>Pause</strong> - <kbd>Esc</kbd>, <kbd>Menu</kbd>, right click</li>
+                <li><strong>Screenshot</strong> - <kbd>F12</kbd></li>
+				<li><strong>Help</strong> - <kbd>F1</kbd></li>
+	            <li><strong>Fullscreen</strong> - <kbd>Alt</kbd> + <kbd>Enter</kbd>, <kbd>f</kbd>, <kbd>F11</kbd></li>
+				<li><strong>Quit</strong> - <kbd>Alt</kbd> + <kbd>F4</kbd></li>
+            </ul>
+
+			<h2>Accessibility Features</h2>
+			<p>{Your Game} includes some features designed to make the game more accessible. You can toggle them in the Settings menu.</p>
+			<ul>
+				<li>Change the game's default font to DejaVu Sans or OpenDyslexic</li>
+				<li>Adjust text box opacity</li>
+				<li>Adjust text size and line spacing</li>
+				<li>Enable subtitles for important sounds</li>
+				<li>Toggle <a href="#Self-Voicing_Mode">self-voicing</a> or <a href="#Clipboard_Voicing_Mode">clipboard voicing</a> mode</li>
+			</ul>
+
+			<h3>Self-Voicing Mode</h3>
+			<p>When self-voicing mode is enabled, in-game text will be read aloud using the default speech synthesis software for your operating system. Self-voicing mode can be toggled either by pressing <kbd>v</kbd>, <kbd>Shift</kbd> + <kbd>V</kbd>, or through the preferences menu.</p>
+
+			<p>You can use the keyboard arrows to navigate through and interact with any focusable elements on screen. When an element is focused, the game will announce the text associated with that element. When no element is focused, the game will announce whatever non-focusable text is on screen, such as the dialogue.</p>
+
+			<p>Self-voicing mode is not supported on Android, iOS, or Chrome OS.</p>
+
+			<h4>Speech Settings</h4>
+			<h5>Windows</h5>
+			<p>Self-voicing on Windows is handled by the Microsoft Speech API. Reading voice and speed can be changed by going to Control Panel, Ease of Access, Speech Recognition, and then selecting Text to Speech. This will open a window called Speech Properties where you can adjust voice settings.</p>
+
+			<h5>Mac</h5>
+			<p>Self-voicing on Mac is handled through the "say" command. Speech settings can be adjusted by going to System Preferences. They are located in different locations depending on your OS version:</p>
+			<ul>
+				<li>10.6 (Snow Leopard) and 10.7 (Lion) Under <strong>Speech</strong>, then the <strong>Text to Speech</strong> tab.</li>
+				<li>10.8 (Mountain Lion) through 10.11 (El Capitan): <strong>Dictation & Speech</strong>, then the <strong>Text to Speech</strong> tab.</li>
+				<li>10.12 (Sierra) and newer: <strong>Accessibility</strong>, then the <strong>Speech</strong> tab.</li>
+			</ul>
+
+			<h5>Linux</h5>
+			<p>Self-voicing on Linux is handled using eSpeak. If self-voicing is not working on your system, you may need to install eSpeak using your package manager.</p>
+
+			<h3>Clipboard Voicing Mode</h3>
+			<p>If you are using a screenreader that can process text copied to the clipboard, you may prefer to use clipboard voicing mode. Clipboard voicing can be toggled by pressing <kbd>Shift</kbd> + <kbd>C</kbd> or through the accessibility menu.</p>
+
+			<p>In clipboard voicing mode, when an element is focused using the keyboard or mouse, any text currently associated with that element will be copied to the clipboard. If no element is focused, any non-focusable text on screen, such as dialogue, may be copied to the clipboard instead.</p>
+
+			<h2>Uninstalling the Game</h2>
+            <h3>Steam</h3>
+			<ol>
+            	<li>Find and click on {Your Game} in the Steam client.</li>
+				<li>Click the gear icon on the right side. Then under "Manage," click <strong>Uninstall</strong>.</li>
+            	<li>Click <strong>Uninstall</strong> in the popup window that appears to confirm your selection.</li>
+			</ol>
+
+            <h3>Itch.io</h3>
+			<p>If you downloaded the game from itch.io directly, you can simply delete the game folder to remove it from your computer.</p>
+			<p>If you are using the app:</p>
+            <ol>
+                <li>Open the Itch app and select the <strong>Library</strong> tab.</li>
+                <li>Find {Your Game} under "Installed items." You may need to select <strong>View all...</strong> on the right if you have many games installed.</li>
+                <li>Right click on the {Your Game} thumbnail and select <strong>Uninstall</strong>.</li>
+                <li>Click <strong>Uninstall now</strong> in the popup that appears to confirm your selection.</li>
+            </ol>
+
+			<h3>Removing Save Data</h3>
+			<p>{Your Game} stores save files in the app data folder. You'll have to delete this folder separately if you want to completely remove the game from your system.</p>
+            <dl class="dl-inline">
+                <dt>Windows</dt>
+                <dd>%USERPROFILE%/AppData/Roaming/RenPy</dd>
+                <br />
+
+                <dt>Mac</dt>
+                <dd>~/Library/RenPy</dd>
+                <br />
+
+                <dt>Linux</dt>
+                <dd>~/.renpy</dd>
+            </dl>
+			<p>For Itch app users, the user folder on Windows containing your save data may be a specially created user beginning with "itch-player-" if you ran the game in Sandbox Mode.</p>
+        </section>
+        <section>
+			<h1>Troubleshooting</h1>
+			<p>{Your Game} requires the following minimum specs:</p>
+            <dl class="dl-inline">
+                <dt>Operating System</dt>
+                <dd>Windows XP, Mac OS X 10.6 (Snow Leopard) 64-bit, or Ubuntu 12.04</dd>
+                <br />
+
+                <dt>CPU</dt>
+                <dd>Intel&reg; Core&trade;2 Duo Processor @ 2.00 GHz</dd>
+                <br />
+
+                <dt>RAM</dt>
+                <dd>2.0 GB</dd>
+                <br />
+
+                <dt>Graphics</dt>
+                <dd>OpenGL 2.0- or DirectX&reg; 9.0c-compatible GPU</dd>
+            </dl>
+			<h2>Performance Issues</h2>
+			<p>You may experience lag if your graphics drivers are out of date or if your system does not adequately support hardware-accelerated graphics.</p>
+			<ol>
+				<li>Ensure your graphics drivers are up to date.</li>
+				<li>Select a new renderer in the Settings menu under <strong>Graphics</strong>. "Auto" will select a renderer best suited for your system, but you may want to try selecting "OpenGL" and finally "ANGLE/DirectX" if you are experiencing lag. Restart the game after changing renderers.</li>
+				<li>For low-end systems, videos and animated transitions can be disabled from the Graphics settings screen.</li>
+				<li>If playing from a laptop, you may experience better performance by keeping your computer connected to power or optimizing battery settings for performance rather than battery life.</li>
+			</ol>
+			<h2>Failing to Launch</h2>
+			<p>There are a number of reasons the game may fail to start on your system:</p>
+			<dl>
+				<dt>Graphics drivers<dt>
+				<dd>In rare cases, an outdated or buggy graphics card driver will cause the game to not launch. Make sure your drivers are up to date before running the game.</dd>
+
+				<dt>File path encoding issues</dt>
+				<dd>On Windows systems, the game may not start correctly if it relies on file paths containing characters outside the system's language. You will need to adjust your system locale for non-unicode programs, either through Windows settings or by using a system locale utility such as <a href="https://pooi.moe/Locale-Emulator/">Locale Emulator</a>.</dd>
+
+				<dt>Running on a non-primary display</dt>
+				<dd>On Mac OS X 10.9 (Mavericks), you will need to launch the game from the primary display to ensure it starts correctly.</dd>
+			</dl>
+			<h2>Reporting Bugs</h2>
+			<p>{Information on how and where to send bug reports goes here.}</p>
+        </section>
+        <section>
+            <h1>Credits & Contact</h1>
+			<p>{Your Game} is a game by {Your Name}. {<a href="https://gamewebsite.com">gamewebsite.com</a>}</p>
+
+			<p>{Here is just one way you could format your game credits, if you decide to include them here.}</p>
+			<dl>
+				<dt>Code</dt>
+				<dd>{Programmer 1}</dd>
+
+				<dt>Story</dt>
+				<dd>{Writer 1}</dd>
+
+				<dt>Backgrounds</dt>
+				<dd>{Artist 1}</dd>
+
+				<dt>CGs</dt>
+				<dd>{Artist 2}</dd>
+
+				<dt>Localization</dt>
+				<dd>{Translator 1}</dd>
+
+				<dt>Beta Testing</dt>
+				<dd>{List of many beta testers.}</dd>
+			</dl>
+			<h2>Special Thanks</h2>
+			<p>{You could list your various Patreon sponsors or Kickstarter backers here.}</p>
+			<p>Support {Your Name} on Patreon!</p>
+			<p><a class="button-social button-patreon" href="https://www.patreon.com/join/{yourpatreon}"><img class="button-patreon__icon" src="help/img/patreon.png">Become a Patron</a></p>
+            <h2>Translations</h2>
+            <p>{Information on translating your game goes here.}</p>
+		</section>
+		<section id="legal">
+			<h1>Legal Info</h1>
+			<h2>Monetization</h2>
+			<p>{You can add info here about whether end-users are allowed to stream your game, make let's plays, use footage of your game for reviews, etc., for commercial or non-commercial purposes.}</p>
+
+			<h2>Warranty</h2>
+			<p>{Add something like, "We are not responsible if your computer blows up."}</p>
+
+			<h2>Privacy Policy</h2>
+			<p>{If your game includes one or more APIs that collect info on the user or their game configuration, such as Google Analytics or an automatic crash reporting system, you should include info about what information is collected, how it is used, and how the user can opt out of these features. The Data settings screen is a good place to include "opt-out" settings.}</p>
+
+			<h2>License</h2>
+			<p>{Your Game} &copy; {Year} {Your Name}</p>
+			<p>{Info about the license for your game's original assets, story, and code goes here. If you don't place your original work under a specific license, it is assumed to be all rights reserved, so make sure to update this section if you intend to release assets under a <a href="help/licenses/cc3-human.html">Creative Commons license</a>.}</p>
+
+			<p>{Your Game} is built using software under a number of licenses, including the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License</a>.
+
+			<dl class="dl-licenses">
+				<dt><span>DejaVu Sans</span></dt>
+				<dd>
+					<p>Font is &copy; 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc. (<a href="licenses/bitstream.html">Bitstream Vera License</a>)</p>
+
+					<p>Glyphs imported from Arev fonts are &copy; 2006 by Tavmjong Bah. All Rights Reserved (<a href="licenses/bitstream.html?word1=Tavmjong Bah&word2=Arev&org=Tavmjong Bah&orgnames=Tavmjong Bah&contact=tavmjong@free.fr">Bitstream Vera License</a>).</p>
+
+					<p>DejaVu changes are in public domain.</p>
+				</dd>
+				<dt><span>HTML Shiv</span></dt>
+				<dd>
+					<p>&copy; 2014 Alexander Farkas (<a href="help/licenses/sil-mit.html">MIT</a>)</p>
+				</dd>
+				<dt><span>Lato</span></dt>
+				<dd>
+					<p>&copy; 2010-2015 by tyPoland Lukasz Dziedzic with Reserved Font Name Lato. Licensed under the <a href="help/licenses/sil-ofl1-1.html">SIL Open Font License, Version 1.1</a>.
+				</dd>
+				<dt><span>OpenDyslexic</span></dt>
+				<dd>
+					<p>&copy; 2019 by <a href="https://abbiecod.es">Abbie Gonzalez</a> with Reserved Font Name OpenDyslexic. Licensed under the <a href="help/licenses/sil-ofl1-1.html">SIL Open Font License, Version 1.1</a>.</p>
+
+					<p>Based on Bitstream Vera font, &copy; 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc. (<a href="licenses/bitstream.html">Bitstream Vera License</a>)</p>
+				</dd>
+				<dt><span>Pure JS Table of Contents by Hendrik</span></dt>
+				<dd>
+					<p>&copy; 2020 by Hendrik (<a href="help/licenses/sil-mit.html">MIT</a>)</p>
+				</dd>
+				<dt><span>Ren'Py</span></dt>
+				<dd>
+					<p>Most of Ren'Py is covered by the terms of the <a href="help/licenses/mit.html">MIT License</a>. For the purposes of LGPL compliance, all source code that Ren'Py depends on is located in one of the following repositories:</p>
+
+					<ul>
+						<li><a href="https://github.com/renpy/renpy">Ren'Py</a></li>
+						<li><a href="https://github.com/renpy/pygame_sdl2">Pygame_SDL2</a></li>
+						<li><a href="https://github.com/renpy/renpy-deps">Desktop dependencies</a></li>
+						<li><a href="https://github.com/renpy/python-for-android">Android</a></li>
+						<li><a href="https://github.com/renpy/rapt">Android Build Tools</a></li>
+						<li><a href="https://github.com/renpy/renios">iOS</a></li>
+					</ul>
+
+					<p>Ren'Py binaries include code from the following projects:</p>
+					<ul>
+						<li><strong>bzip2</strong> &copy; 1996-2010 by Julian Seward (<a href="licenses/bzip2.html">bzip2 license</a>)</li>
+						<li><strong>FFmpeg</strong> by Fabrice Bellard (<a href="licenses/lgpl2.html">LGPL 2.1+</a>)</li>
+						<li><strong>FreeType</strong> by David Turner, Robert Wilhelm, and Werner Lemberg (<a href="licenses/ftl.html">FTL</a>)</li>
+						<li><strong><abbr title="The OpenGL Extension Wrangler Library">GLEW</abbr></strong> &copy; 2002 by Lev Povalahev, 2008-2016 by Nigel Stewart, and 2002-2008 by Milan Ikits and Marcelo Magallon (<a href="licenses/bsd3.html">Modified BSD License</a>), based on code &copy; 2007 by The Khronos Group Inc. and 1999-2007 by Brian Paul (<a href="licenses/mit.html">MIT License</a>)</li>
+						<li><strong>GNU FriBidi</strong> by Behnam Esfahbod, Behdad Esfahbod, and contributors (<a href="licenses/lgpl2.html">LGPL 2.1+</a>)</li>
+						<li><strong>libjpeg-turbo</strong> &copy; 2009-2019 by D. R. Commander and 2015 by Viktor Szathmáry (<a href="licenses/bsd3.html">Modified BSD License</a>, and the <a href="licenses/zlib.html">zlib license</a>), based on software by the Independent JPEG Group (<a href="licenses/ijg.html">IJG License</a>)</li>
+						<li><strong>libpng</strong> &copy; 2000-2002, 2004, 2006-2018 by Glenn Randers-Pehrson (<a href="licenses/png.html">PNG License</a>)</li>
+						<li><strong>py2exe</strong> (<a href="licenses/mit.html">MIT License</a>)</li>
+						<li><strong>Pygame_SDL2</strong> by PyTom (<a href="licenses/zlib.html">zlib license</a>, <a href="licenses/lgpl2.html">LGPL 2.1</a>)</li>
+						<li><strong>PyObjC</strong> by Ronald Oussoren (<a href="licenses/mit.html">MIT License</a>)</li>
+						<li><strong>SDL2, SDL2_image, and SDL2_ttf</strong> by Sam Lantinga and Mattias Engdegård (<a href="licenses/zlib.html">zlib license</a>).</li>
+						<li><strong>zlib</strong> &copy; 1995-2017 by Jean-loup Gailly and Mark Adler (<a href="licenses/zlib.html">zlib license</a>)</li>
+						<li><strong>zSync</strong> by Colin Phipps (<a href="licenses/artistic2.html">Artistic License</a>)</li>
+					</ul>
+				</dd>
+				<dt><span>Spectre.css</span></dt>
+				<dd>
+					<p>&copy; 2016-2018 by Yan Zhu (<a href="help/licenses/sil-mit.html">MIT</a>)</p>
+				</dd>
+				<dt><span>Steamworks SDK</span></dt>
+				<dd>
+					<p>© 2019 Valve Corporation, all rights reserved.</p>
+				</dd>
+			</dl>
+		</section>
+    </main>
+	<script src="help/js/toc.js"></script>
+</body>
+</html>
