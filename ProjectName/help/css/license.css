@@ -1,0 +1,16 @@
+/** License Page CSS */
+
+body {
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+.caps {
+	text-transform: uppercase;
+}
