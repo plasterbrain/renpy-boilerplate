@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html>
-
+<!--
+I've been documenting parameters up here in this comment tag. Why not?
+year - Copyright year, e.g. 2010
+-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>License Name 1</title>
-  <style>
-    body {
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1em;
-    }
-
-    li {
-      margin-bottom: 1em;
-    }
-
-		.caps {
-			text-transform: uppercase;
-		}
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>License Name</title>
+	<link rel="stylesheet" href="../css/license.css" type="text/css">
+	<!--[if lt IE 9]>
+	  <script src="help/js/html5shiv.js"></script>
+	  <script src="help/js/html5shiv-printshiv.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-  <h1>License Name</h1>
-  <section style="font-size: .8em;" aria-label="Title of this section">
-    <p>You can put version info, copyright notices, and disclaimers here.</p>
-  </section>
-  <hr>
-  <section id="section1">
-    <h2 id="mytxt">Section 1</h2>
-    <p>Section content goes here.</p>
-  </section>
-</body>
+	<h1>License Name</h1>
+	<section style="font-size: .8em;" aria-label="Title of this section">
+		<p>You can put version info and disclaimers here, as well as information about the organization that made the license, which may not be the same as the licensor.</p>
+	</section>
+	<hr>
+	<p>Please remember to update the <code>&lt;title&gt;</code> tag with your license name, too.</p>
 
+	<section id="section1">
+		<h2>Section Name</h2>
+		<p>You can give each section an <code>id</code> attribute to enable linking to sections of a license.</p>
+
+		<p>Any elements with a class name beginning with "param_" will be populated by URL query parameters.</p>
+
+		<p>For example, this text &ndash; <span class="param_year">1776</span> &ndash; has the class "param_year." Linking to this license page with a query like <em>template.html?year=2010</em> will set it to "2010." Give it a try!</p>
+	</section>
+
+	<script src="../js/license.js"></script>
+</body>
 </html>
