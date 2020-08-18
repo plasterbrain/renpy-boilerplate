@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>The FreeType Project License</title>
-    <style>
-        body {
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-        li {
-            margin-bottom: 1em;
-        }
-        .caps {
-            text-transform: uppercase;
-        }
-    </style>
-  </head>
-  <body>
-    <h1>The FreeType Project <span class="caps">License</span></h1>
-    <section style="font-size: .8em;" aria-label="Copyright">
-        <p>2006-Jan-27</p>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>The FreeType License</title>
+	<link rel="stylesheet" href="../css/license.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="help/js/html5shiv.js"></script>
+		<script src="help/js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<style>
+		ul {
+			list-style-type:circle;
+		}
+	</style>
+</head>
+<body>
+	<h1>The FreeType Project <span class="caps">License</span></h1>
+	<section style="font-size: .8em;" aria-label="Copyright">
+		<p>2006-Jan-27</p>
 
-        <p>The FreeType Project is copyright &copy; 1996-2002  by David Turner, Robert Wilhelm, and Werner Lemberg. All rights reserved except as specified below.</p>
-    </section>
-    <hr>
-    <section id="terms">
-        <h2>Legal Terms</h2>
+		<p>Copyright 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg.</p>
+	</section>
+	<hr>
+	<section id="introduction">
+		<h1>Introduction</h1>
+		<p>The FreeType Project is distributed in several archive packages; some of them may contain, in addition to the FreeType font engine, various tools and contributions which rely on, or relate to, the FreeType Project.</p>
 
-        <ol start="0">
-            <li>
-                <h3>Definitions</h3>
-                <p>Throughout this license, the terms 'package', 'FreeType Project', and 'FreeType archive' refer to the set of files originally distributed by the authors (David Turner, Robert Wilhelm, and Werner Lemberg) as the 'FreeType Project', be they named as alpha, beta or final release.</p>
+		<p>This license applies to all files found in such packages, and which do not fall under their own explicit license. The license affects thus the FreeType font engine, the test programs, documentation and makefiles, at the very least.</p>
 
-                <p>'You' refers to the licensee, or person using the project, where 'using' is a generic term including compiling the project's source code as well as linking it to form a 'program' or 'executable'.</p>
+		<p>This license was inspired by the BSD, Artistic, and IJG (Independent JPEG Group) licenses, which all encourage inclusion and use of free software in commercial and freeware products alike. As a consequence, its main points are that:</p>
 
-                <p>This  program is referred to as 'a program using the FreeType engine'.</p>
+		<ul>
+			<li>We don't promise that this software works. However, we will be interested in any kind of bug reports. ('as is' distribution)</li>
 
-                <p>This license applies to all files distributed in the original FreeType Project, including all source code, binaries and documentation, unless otherwise stated in the file in its original, unmodified form as distributed in the original archive.</p>
+			<li>You can use this software for whatever you want, in parts or full form, without having to pay us. ('royalty-free' usage)</li>
 
-                <p>If you are unsure whether or not a particular file is covered by this license, you must contact us to verify this.</p>
-            </li>
-            <li>
-                <h3>No Warranty</h3>
-                <p class="caps">The FreeType Project is provided 'as is' without warranty of any kind, either  express or implied, including, but not limited to, warranties of merchantability and fitness  for a particular purpose. In no event will any of the authors or copyright holders be liable for any damages caused by the use or the inability to use, of the FreeType Project.</p>
-            </li>
-            <li>
-                <h3>Redistribution</h3>
-                <p>This  license  grants  a  worldwide, royalty-free,  perpetual  and irrevocable right  and license to use,  execute, perform, compile, display,  copy,   create  derivative  works   of,  distribute  and sublicense the  FreeType Project (in  both source and  object code forms)  and  derivative works  thereof  for  any  purpose; and  to authorize others  to exercise  some or all  of the  rights granted herein, subject to the following conditions:</p>
-                <ul>
-                    <li>Redistribution of  source code  must retain this  license file ('FTL.TXT') unaltered; any  additions, deletions or changes to the original  files must be clearly  indicated in accompanying documentation.   The  copyright   notices  of  the  unaltered, original  files must  be  preserved in  all  copies of  source files.</li>
+			<li>You may not pretend that you wrote this software. If you use it, or only parts of it, in a program, you must acknowledge somewhere in your documentation that you have used the FreeType code. ('credits')</li>
+		</ul>
 
-                    <li>Redistribution in binary form must provide a disclaimer that states that the software is based in part of the work of the FreeType Team, in the distribution documentation. We also encourage you to put an URL to the FreeType web page in your documentation, though this isn't mandatory.</li>
-                </ul>
-                <p>These conditions apply to any software derived from or based on the FreeType Project, not just the unmodified files. If you use our work, you must acknowledge us. However, no fee need be paid to us.</p>
-            </li>
-            <li>
-                <h3>Advertising</h3>
-                <p>Neither the FreeType authors and contributors nor you shall use the name of the other for commercial, advertising, or promotional purposes without specific prior written permission.</p>
+		<p>We specifically permit and encourage the inclusion of this software, with or without modifications, in commercial products. We disclaim all warranties covering The FreeType Project and assume no liability related to The FreeType Project.</p>
 
-                <p>We suggest, but do not require, that you use one or more of the following phrases to refer  to this software in your documentation or advertising materials: 'FreeType Project',  'FreeType Engine', 'FreeType library', or 'FreeType Distribution'.</p>
+		<p>Finally, many people asked us for a preferred form for a credit/disclaimer to use in compliance with this license. We thus encourage you to use the following text:</p>
 
-                <p>As you have not signed this license, you are not required to accept it. However, as the FreeType Project is copyrighted material, only this license, or another one contracted  with the authors, grants you the right to use, distribute, and modify it.</p>
+		<blockquote>
+			<p>Portions of this software are copyright © &lt;year&gt; The FreeType Project (www.freetype.org). All rights reserved.</p>
+		</blockquote>
 
-                <p>Therefore, by using, distributing, or modifying the FreeType Project, you indicate that you understand and accept all the terms of this license.</p>
-            </li>
-            <li>
-                <h3>Contacts</h3>
-                <p>There are two mailing lists related to FreeType:</p>
-                <ul>
-                    <li>
-                        <h4>freetype@nongnu.org</h4>
-                        <p>Discusses general use and applications of FreeType, as well as future and wanted additions to the library and distribution.</p>
+		<p>Please replace &lt;year&gt; with the value from the FreeType version you actually use.</p>
+	</section>
+	<section id="terms">
+		<h2>Legal Terms</h2>
 
-                        <p>If you are looking for support, start in this list if you haven't found anything to help you in the documentation.</p>
-                    </li>
-                    <li>
-                        <h4>freetype-devel@nongnu.org</h4>
-                        <p>Discusses bugs, as well as engine internals, design issues, specific licenses, porting, etc.</p>
-                    </li>
-                </ul>
+		<ol start="0">
+			<li>
+				<h3>Definitions</h3>
+				<p>Throughout this license, the terms 'package', 'FreeType Project', and 'FreeType archive' refer to the set of files originally distributed by the authors (David Turner, Robert Wilhelm, and Werner Lemberg) as the 'FreeType Project', be they named as alpha, beta or final release.</p>
 
-                <p>Our home page can be found at</p>
+				<p>'You' refers to the licensee, or person using the project, where 'using' is a generic term including compiling the project's source code as well as linking it to form a 'program' or 'executable'. This program is referred to as 'a program using the FreeType engine'.</p>
 
-                <p><a href="https://www.freetype.org">https://www.freetype.org</a></p>
-            </li>
-        </ol>
-    </section>
-  </body>
+				<p>This license applies to all files distributed in the original FreeType Project, including all source code, binaries and documentation, unless otherwise stated in the file in its original, unmodified form as distributed in the original archive. If you are unsure whether or not a particular file is covered by this license, you must contact us to verify this.</p>
+
+				<p>The FreeType Project is copyright (C) 1996-2000 by David Turner, Robert Wilhelm, and Werner Lemberg. All rights reserved except as specified below.</p>
+			</li>
+
+			<li>
+				<h3>No Warranty</h3>
+				<p class="caps">The FreeType Project is provided 'as is' without warranty of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. In no event will any of the authors or copyright holders be liable for any damages caused by the use or the inability to use, of the FreeType Project.</p>
+			</li>
+
+			<li>
+				<h3>Redistribution</h3>
+				<p>This license grants a worldwide, royalty-free, perpetual and irrevocable right and license to use, execute, perform, compile, display, copy, create derivative works of, distribute and sublicense the FreeType Project (in both source and object code forms) and derivative works thereof for any purpose; and to authorize others to exercise some or all of the rights granted herein, subject to the following conditions:</p>
+
+				<ul>
+					<li>Redistribution of source code must retain this license file ('FTL.TXT') unaltered; any additions, deletions or changes to the original files must be clearly indicated in accompanying documentation. The copyright notices of the unaltered, original files must be preserved in all copies of source files.</li>
+
+					<li>Redistribution in binary form must provide a disclaimer that states that the software is based in part of the work of the FreeType Team, in the distribution documentation. We also encourage you to put an URL to the FreeType web page in your documentation, though this isn't mandatory.</li>
+				</ul>
+
+				<p>These conditions apply to any software derived from or based on the FreeType Project, not just the unmodified files. If you use our work, you must acknowledge us. However, no fee need be paid to us.</p>
+			</li>
+
+			<li>
+				<h3>Advertising</h3>
+				<p>Neither the FreeType authors and contributors nor you shall use the name of the other for commercial, advertising, or promotional purposes without specific prior written permission.</p>
+
+				<p>We suggest, but do not require, that you use one or more of the following phrases to refer to this software in your documentation or advertising materials: 'FreeType Project', 'FreeType Engine', 'FreeType library', or 'FreeType Distribution'.</p>
+
+				<p>As you have not signed this license, you are not required to accept it. However, as the FreeType Project is copyrighted material, only this license, or another one contracted with the authors, grants you the right to use, distribute, and modify it. Therefore, by using, distributing, or modifying the FreeType Project, you indicate that you understand and accept all the terms of this license.</p>
+			</li>
+
+			<li>
+				<h3>Contacts</h3>
+				<p>There are two mailing lists related to FreeType:</p>
+				<ul>
+					<li>
+						<h4>freetype@nongnu.org</h4>
+						<p>Discusses general use and applications of FreeType, as well as future and wanted additions to the library and distribution. If you are looking for support, start in this list if you haven't found anything to help you in the documentation.</p>
+					</li>
+					<li>
+						<h4>freetype-devel@nongnu.org</h4>
+						<p>Discusses bugs, as well as engine internals, design issues, specific licenses, porting, etc.</p>
+					</li>
+				</ul>
+
+				<p>Our home page can be found at</p>
+
+				<p><a href="https://www.freetype.org">https://www.freetype.org</a></p>
+			</li>
+		</ol>
+	</section>
+</body>
 </html>
