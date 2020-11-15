@@ -55,7 +55,7 @@ code {
 
 .dl-inline {
 	background: #f5f5f5;
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
 	font-size: .8rem;
 	padding: 1rem;
 }
@@ -68,7 +68,7 @@ code {
 .dl-licenses dt {
 	display: flex;
 	font-size: 1rem;
-    font-weight: normal;
+	font-weight: normal;
 }
 
 .dl-licenses dt span {
@@ -76,13 +76,13 @@ code {
 }
 
 .dl-licenses dt::after {
-  content: '';
-  border-bottom: 1px dashed #353535;
-  height: 1px;
-  margin-top: .8rem;
-  margin-left: 1rem;
-  overflow: hidden;
-  width: 100%;
+	content: '';
+	border-bottom: 1px dashed #353535;
+	height: 1px;
+	margin-top: .8rem;
+	margin-left: 1rem;
+	overflow: hidden;
+	width: 100%;
 }
 
 figcaption {
@@ -197,11 +197,11 @@ footer,
 }
 
 .icon-ga {
-    float: left;
-    margin-right: .5rem;
-    margin-top: .2rem;
-    width: 32px;
-    height: 32px;
+	float: left;
+	margin-right: .5rem;
+	margin-top: .2rem;
+	width: 32px;
+	height: 32px;
 }
 
 .button-social {
@@ -212,7 +212,7 @@ footer,
 	text-decoration: none;
 	transition: .5s ease all;
 	-webkit-user-select: none;
-	   -moz-user-select: none;
+		-moz-user-select: none;
 		-ms-user-select: none;
 			user-select: none;
 }
@@ -222,8 +222,8 @@ footer,
 }
 
 .button-patreon {
-	background: #f96854;
-	border: 1px solid #f96854;
+	background: #FF424D;
+	border: 1px solid #FF424D;
 	padding: .5rem .6rem;
 	text-transform: uppercase;
 }
@@ -242,7 +242,7 @@ a.button-social::after {
 .button-patreon:hover,
 .button-patreon:focus,
 .button-patreon:active {
-	background: #ff8370;
+	background: #f26068;
 }
 
 .button-patreon__icon {
@@ -305,7 +305,4 @@ a.button-social::after {
 	.table.table-striped tbody tr:nth-of-type(2n+2) td:nth-of-type(odd) {
 		background: #e5f2ff;
 	}
-}
-
-h1, h2, h3, h4, h5,
 }
