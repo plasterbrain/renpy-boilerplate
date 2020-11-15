@@ -2,8 +2,6 @@
  * HTML5 Shiv 3.7.3
  * Copyright (c) 2014 Alexander Farkas (aFarkas). All rights reserved.
  *
- * This library is availble under the MIT License, which is copied below:
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
  * deal in the Software without restriction, including without limitation the
