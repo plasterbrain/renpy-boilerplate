@@ -51,6 +51,9 @@ This is a blank Ren'Py project template for people with more robust visual novel
 - Ability to remap gamepad controls. I don't have a controller so I can't really work this out right now.
 - Steam-like achievement popup for itch.io, Game Jolt, etc.
 - Upload scripts for Discord/Dispatch, which is currently indefinitely unavailable.
+- Check if CFAppleHelpAnchor can just be set to "help" or if Ren'Py puts it somewhere incompatible during the build process
+- I don't know if notarizing Mac apps requires them to be zipped and/or to not have any of that Windows/Linux nonsense sitting in the same directory.
+- TODO: Where does entitlements go
 
 ### Testing
 - Build scripts, including Discord Dispatch configuration whenever that becomes a thing again.
