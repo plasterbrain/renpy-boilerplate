@@ -1,7 +1,7 @@
 "appbuild"
 {
 	"appid" "{APP ID}"
-	"desc" "{Comment about this build update!}"
+	"desc" "{Comment}"
 	"buildoutput" "..\output"
 	"contentroot" "..\content"
 	"setlive" "beta"
