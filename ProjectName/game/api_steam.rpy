@@ -2,6 +2,13 @@
 ## API: Steam
 ################################################################################
 
+python early:
+
+	## ---! Steam App ID
+	## For use when calling Steamworks API in Ren'Py, for example to open the
+	## store page for your game in Steam overlay.
+	config.steam_appid = ""
+
 init python:
 
     ## --- Achievement Notification Position
@@ -23,11 +30,3 @@ init python:
         persistent.steam = True
     except:
         persistent.steam = False
-
-    ## ---! Steam App ID
-    ## For use when calling Steamworks API in Ren'Py, for example to open the
-    ## store page for your game in Steam overlay.
-    try:
-        STEAM_APPID = renpy.file("../steam_appid.txt").read().strip()
-    except:
-        STEAM_APPID = ""
