@@ -93,7 +93,7 @@ init python:
 
     ## --- OpenGL 2 (7.4.0)
     ## Whether to enable and require GL2.
-    # config.gl2 = True
+    config.gl2 = True
 
     ## --- OpenGL Acceleration
     ## Whether to use OpenGL acceleration. Note that this will automatically be

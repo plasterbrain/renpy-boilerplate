@@ -120,7 +120,7 @@ init python:
     config.sample_voice = None
 
     ## (7.4.0) List of mixers exempt from the self-voicing volume drop.
-    # config.voice_mixers = ["voice"]
+    config.voice_mixers = ["voice"]
 
     ## List of mixers which cancel out self-voicing.
     config.tts_voice_channels = ["voice"]

@@ -86,7 +86,7 @@ init python:
     ## --- TTS Filter Tags (7.4.0)
     ## A list of text tag names. The text wrapped by these tags will be
     ## displayed only if self-voicing is not activated.
-    # config.tts_filter_tags = ["noalt", "rt", "art"]
+    config.tts_filter_tags = ["noalt", "rt", "art"]
 
     ## --- Wait for Voicing (6.99.13)
     # Whether {nw} tags waits until voice clips and self-voicing finish.

@@ -175,7 +175,7 @@ init python:
 
     ## --- Missing Return Label (7.4.0)
     ## Label to jump to when "return" statement fails.
-    # config.return_not_found_label = None
+    config.return_not_found_label = None
 
     ## --- (Callbacks) Interaction Start
     ## List of functions that are called, with no arguments, when an interaction
