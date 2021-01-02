@@ -68,8 +68,7 @@ init -1 python:
         ("angle", renpy.windows and not config.gl2),
         ("angle2", renpy.windows and config.gl2),
         ("gles", not config.gl2),
-        ("gles2", config.gl2),
-        ("sw", True)]
+        ("gles2", config.gl2)]
     increments.renderer_names = {
         "angle2": "ANGLE2/DirectX",
         "gl2": "OpenGL 2.0",
@@ -77,8 +76,7 @@ init -1 python:
         "angle": "ANGLE/DirectX",
         "gl": "OpenGL",
         "gles": "GLES",
-        "auto": _("Auto"),
-        "sw": _("Software")}
+        "auto": _("Auto")}
 
     #---------------------------------------------------------------------------
     increments.renderer_list = [x[0] for x in increments.renderer_list if x[1]]

@@ -171,14 +171,17 @@ init python:
             ----------
             renderer : str
                 The string representing the new renderer to use, one of "auto",
-                "gl", "gl2", "angle", "angle2", "gles", "gles2", or "sw".
+                "gl", "gl2", "angle", "angle2", "gles", or "gles2".
             """
             if not renderer:
                 renderer = _preferences.renderer
 
-            if renderer not in ["auto", "gl", "gl2", "angle", "angle2", "gles", "gles2", "sw"]:
+            if renderer not in ["auto", "gl", "gl2", "angle", "angle2", "gles", "gles2"]:
                 if config.developer:
-                    raise Exception("Invalid renderer %s" % s)
+					if renderer is "sw":
+						raise Exception("The software renderer has been removed as of Ren'Py 7.4.")
+					else:
+                    	raise Exception("Invalid renderer %s" % s)
                 else:
                     renderer = "auto"
             self.renderer = renderer
