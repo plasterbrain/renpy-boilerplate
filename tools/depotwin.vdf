@@ -1,6 +1,6 @@
 "DepotBuildConfig"
 {
-	"DepotID" "{WNIDOWS DEPOT ID}"
+	"DepotID" "{WINDOWS DEPOT ID}"
 	"contentroot" "{STEAMWORKS}/ContentBuilder/Content/{build.directory_name}"
 	"FileMapping"
 	{
