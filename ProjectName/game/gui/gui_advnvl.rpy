@@ -104,6 +104,9 @@ init python:
 
     ## Whether show give menu captions as text spoken by the narrator.
     config.narrator_menu = False
+    
+    ## Whether to show unavailable choices as disabled buttons
+    config.menu_include_disabled
 
 ## items: A list of choice objects, each with caption and action fields.
 screen choice(items):
