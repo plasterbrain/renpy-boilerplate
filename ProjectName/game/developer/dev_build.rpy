@@ -25,6 +25,13 @@ init python:
     ## The version of your game. If you are distributing to Mac, this must be
     ## semver format (e.g., "1.2.3").
     build.version = config.version
+    
+    ## Whether to include dependencies for running on 32-bit unix systems.
+    ## Setting this to False may prevent some antivirus programs from producing ## a false positive for your game.
+    build.include_i686 = True
+    
+    ## Whether to use custom icon for the 32-bit Windows build
+    build.change_icon_i686 = True
 
 ## -- Mac/iOS ------------------------------------------------------------------
 
@@ -39,17 +46,17 @@ init python:
     ## Whether the program should use the integrated GPU. Sets
     ## `NSSupportsAutomaticGraphicsSwitching` to True.
     build.allow_integrated_gpu = True
-	
-	build.mac_info_plist = {
-		"CFBundleDisplayName": build.display_name,
-		#"CFBundleSpokenName": "",
-		#"CFBundleIdentifier": "com.you.game",
+    
+    build.mac_info_plist = {
+        "CFBundleDisplayName": build.display_name,
+        #"CFBundleSpokenName": "",
+        #"CFBundleIdentifier": "com.you.game",
         "CFBundleShortVersionString": build.version,
-		"CFBundleDevelopmentRegion": "en-US",
-		"LSMinimumSystemVersion": "10.6.0",
+        "CFBundleDevelopmentRegion": "en-US",
+        "LSMinimumSystemVersion": "10.6.0",
         "LSApplicationCategoryType": "public.app-category.simulation-games",
-		"NSHumanReadableCopyright": __("All rights reserved."),
-	}
+        "NSHumanReadableCopyright": __("All rights reserved."),
+    }
 
 ## -- Android/Chrome OS --------------------------------------------------------
 
@@ -123,5 +130,5 @@ init python:
 
     ## Change "PC" package to directory
     build.packages[0]["formats"] = ["directory"]
-	## Change "Mac" package to directory
+    ## Change "Mac" package to directory
     build.packages[2]["formats"] = ["app-directory"]
