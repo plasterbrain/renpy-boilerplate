@@ -87,6 +87,11 @@ style navigation_subbutton_text is navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 init python:
+    
+    ## --- Main Menu Music
+    config.main_menu_music = None
+    
+    config.main_menu_music_fadein = 0.0
 
     gui.main_menu_background = Solid("#252525")
 
