@@ -77,11 +77,7 @@ This is a blank Ren'Py project template for people with more robust visual novel
   - Removed pyobjc, as I can't actually find it anywhere in the Ren'Py/desktop dependency source except as an outdated dependency for TTS system and getting Ren'Py to run on non-Windows systems.
 - Project template license simplified to MIT-0 (formerly dual-licensed under BSD-0 and MIT)
 
-## License
-All *original* code/text created for this project template is licensed under MIT-0. Some files, e.g. the CSS and JS dependencies of the help manual template, are the copyright of their respective authors, and will have their license information included.
-
-- The texts of the various licenses included here are also the property of their respective owners.
-- The Patreon logo is a registered trademark of Patreon, Inc. included in the help manual for the purpose of creating a button to link to your Patreon. I do not own it, and it is included under the vague legal "Font Awesome" standard of redistributing social media icons for creator convenience.
-
-### Warranty
-Four out of five doctors agree I'm perfect, but I can't promise the same of my code, which probably kinda sucks actually. This template comes with no warranty of fitness for any particular purpose.
+0.2.0
+- Added copyright info for libraries included in Ren'Py 7.4.x to the template
+- New Apache license template file
+- New LICENSE-3RD-PARTY file for comfort and convenience
