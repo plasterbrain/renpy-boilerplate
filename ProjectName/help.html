@@ -77,8 +77,7 @@
 			<h5>Mac</h5>
 			<p>Self-voicing on Mac is handled through the "say" command. Speech settings can be adjusted by going to System Preferences. They are located in different locations depending on your OS version:</p>
 			<ul>
-				<li>10.6 (Snow Leopard) and 10.7 (Lion) Under <strong>Speech</strong>, then the <strong>Text to Speech</strong> tab.</li>
-				<li>10.8 (Mountain Lion) through 10.11 (El Capitan): <strong>Dictation & Speech</strong>, then the <strong>Text to Speech</strong> tab.</li>
+				<li>10.10 (Yosemite) through 10.11 (El Capitan): <strong>Dictation & Speech</strong>, then the <strong>Text to Speech</strong> tab.</li>
 				<li>10.12 (Sierra) and newer: <strong>Accessibility</strong>, then the <strong>Speech</strong> tab.</li>
 			</ul>
 
@@ -153,16 +152,11 @@
 			</ol>
 			<h2>Failing to Launch</h2>
 			<p>There are a number of reasons the game may fail to start on your system:</p>
-			<dl>
-				<dt>Graphics drivers<dt>
-				<dd>In rare cases, an outdated or buggy graphics card driver will cause the game to not launch. Make sure your drivers are up to date before running the game.</dd>
-
-				<dt>File path encoding issues</dt>
-				<dd>On Windows systems, the game may not start correctly if it relies on file paths containing characters outside the system's language. You will need to adjust your system locale for non-unicode programs, either through Windows settings or by using a system locale utility such as <a href="https://pooi.moe/Locale-Emulator/">Locale Emulator</a>.</dd>
-
-				<dt>Running on a non-primary display</dt>
-				<dd>On macOS X 10.9 (Mavericks), you will need to launch the game from the primary display to ensure it starts correctly.</dd>
-			</dl>
+			<h3>Graphics drivers</h3>
+			<p>In rare cases, an outdated or buggy graphics card driver will prevent the game from launching Make sure your drivers are up to date before running the game.</p>
+			<h3>File path encoding issues</h3>
+			<p>On Windows systems, the game may not start correctly if it relies on file paths containing characters outside the system's language. You will need to adjust your system locale for non-unicode programs, either through Windows settings or by using a system locale utility such as <a href="https://pooi.moe/Locale-Emulator/">Locale Emulator</a>.</p>
+			
 			<h2>Reporting Bugs</h2>
 			<p>{Information on how and where to send bug reports goes here.}</p>
 		</section>
@@ -199,24 +193,16 @@
 		</section>
 		<section id="legal">
 			<h1>Legal Notices</h1>
-			<h2>Monetization</h2>
-			<p>{You can add info here about whether end-users are allowed to stream your game, make let's plays, use footage of your game for reviews, etc., for commercial or non-commercial purposes.}</p>
-
-			<h2>Warranty</h2>
-			<p>{Add something like, "We are not responsible if your computer blows up."}</p>
-
-			<h2>Privacy Policy</h2>
-			<p>{If your game includes one or more APIs that collect info on the user or their game configuration, such as Google Analytics or an automatic crash reporting system, you should include info about what information is collected, how it is used, and how the user can opt out of these features. The Data settings screen is a good place to include "opt-out" settings.}</p>
-
-			<h2>Copyrights & Trademarks</h2>
+			<h2>License</h2>
 			<p>&copy; {Year} {Your Name}, all rights reserved.</p>
 
 			<p>{Info about the license for your game's original assets, story, and code goes here. If you don't place your original work under a specific license, it is assumed to be all rights reserved, so make sure to update this section if you intend to release assets under a <a href="help/licenses/cc3-human.html">Creative Commons license</a>.}</p>
+			
+			<p>{You can add info here about whether end-users are allowed to stream your game, make let's plays, use footage of your game for reviews, etc., for commercial or non-commercial purposes.}</p>
 
 			<h3>Third-Party Notices</h3>
-			<p>Portions of this software are licensed under terms that require us to include the following notices:</p>
 
-			<p>DevaVu Sans and OpenDyslexic fonts are based on the Vera fonts by Bitstream, Inc. Vera fonts are &copy; 2003 Bitstream, Inc., all rights reserved. "Bitstream Vera" is a trademark of Bitstream, Inc. See the <a href="help/licenses/bitstream.html">Bitstream Vera font license</a>.</p>
+			<p>DevaVu Sans and the OpenDyslexic font are based on the Vera fonts by Bitstream, Inc. Vera fonts are &copy; 2003 Bitstream, Inc., all rights reserved. "Bitstream Vera" is a trademark of Bitstream, Inc. See the <a href="help/licenses/bitstream.html">Bitstream Vera font license</a>.</p>
 
 			<p>DejaVu Sans glyphs imported from Arev fonts are &copy; 2006 Tavmjong Bah, all rights reserved. See the <a href="help/licenses/bitstream.html?name=Arev&year=2006&org=Tavmjong Bah&tm=&name1=Tavmjong Bah&name2=Arev&orgnames=Tavmjong Bah&contact=tavmjong@free.fr">Arev font license</a>.</p>
 
@@ -226,13 +212,19 @@
 			<p>The Lato font is &copy; 2010-2015 Łukasz Dziedzic, with Reserved Font Name Lato. See the <a href="help/licenses/sil-ofl1-1.html?year=2010-2014&org=Łukasz Dziedzic&contact=dziedzic@typoland.com&name=Lato">Lato font license</a>.</p>
 
 			<hr>
-			<p>The ANGLE library is &copy; 2018 The ANGLE Project Authors, all rights reserved. See the <a href="help/licenses/bsd3.html?years=2018&orgs=ANGLE Project Authors. All rights reserved.">ANGLE license</a>.</p>
+			<p>The ANGLE library is &copy; 2018 the ANGLE Project Authors, all rights reserved. See the <a href="help/licenses/bsd3.html?years=2018&orgs=ANGLE Project Authors. All rights reserved.">ANGLE license</a>.</p>
 			
 			<hr>
 			<p>The bzip2 and libbzip2 libraries are &copy; 1996-2010 Julian Seward, all rights reserved. See the <a href="help/licenses/bzip2.html">bzip2 and libbzip2 license</a>.</p>
+			
+			<hr>
+			<p>This software uses the Certifi library, available under the Mozilla Public License v2.0. For purposes of compliance, the source code for Certifi is available <a href="https://github.com/certifi/python-certifi" aria-label="Certifi source code on Github">here</a>.</p>
+			
+			<hr>
+			<p>This software uses the chardet library, available under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. Portions of chardet created by Netscape Communications Corporation are &copy; 1998, 2005 the Netscape Communications Corporation. All Rights Reserved. The Python chardet port is &copy; 2006, 2007, 2008 Mark Pilgrim. For purposes of compliance, the source code for chardet is available <a href="https://github.com/chardet/chardet" aria-label="chardet source code on Github">here</a>.</p>
 
 			<hr>
-			<p>This software uses the library FFmpeg, licensed under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. For purposes of compliance, the relevant source code can be found <a href="https://github.com/renpy/renpy-build/blob/master/source/ffmpeg-4.3.1.tar.gz" aria-label="FFmpeg Ren'Py source code tar on Github">here</a>. "FFmpeg" is a trademark of Fabrice Bellard.</p>
+			<p>This software uses the library FFmpeg, available under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. For purposes of compliance, the source code for FFmpeg is available <a href="https://github.com/renpy/renpy-build/blob/master/source/ffmpeg-4.3.1.tar.gz" aria-label="FFmpeg source code tar on Github">here</a>. "FFmpeg" is a trademark of Fabrice Bellard.</p>
 
 			<hr>
 			<p>Portions of this software are &copy; 2002-2019 The FreeType Project (www.freetype.org). All rights reserved. See the <a href="help/licenses/ftl.html">FreeType License</a>.</p>
@@ -245,7 +237,7 @@
 			<p>GLEW uses code from the Mesa 3-D Graphics Library, &copy; 1999-2007 Brian Paul. See the <a href="help/licenses/mit.html?year=1999-2007&org=Brian Paul">Mesa 3D license</a>.</p>
 
 			<hr>
-			<p>This software uses the GNU FriBidi library, licensed under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. The relevant source code can be found <a href="https://github.com/renpy/renpy-build/blob/master/source/fribidi-1.0.7.tar.bz2" aria-label="in the FriBidi Ren'Py source code tar on Github">here</a>.</p>
+			<p>This software uses the GNU FriBidi library, available under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. For purposes of compliance, the source code for GNU FriBidi can be found <a href="https://github.com/renpy/renpy-build/blob/master/source/fribidi-1.0.7.tar.bz2" aria-label="FriBidi source code tar on Github">here</a>.</p>
 
 			<hr>
 			<p>The libjpeg-turbo library is &copy; 2009-2020 D. R. Commander and 2015 Viktor Szathmáry. See the <a href="help/licenses/bsd3.html?years=2009-2020,2015&orgs=D. R. Commander,Viktor Szathmáry">libjpeg-turbo license</a>.</p>
@@ -256,27 +248,45 @@
 			<p>The PNG Reference Library is &copy; 1995-2019 The PNG Reference Library Authors, 2018-2019 Cosmin Truta, 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson, 1996-1997 Andreas Dilger, and 1995-1996 Guy Eric Schalnat, Group 42, Inc. See the <a href="help/licenses/libpng.html">libpng license</a>.</p>
 
 			<hr>
-			<p>This software uses the Pygame_sdl2 library, &copy; Patrick Dawson and Tom Rothamel.</p>
-
-			<p>Portions of Pygame_sdl2 use code from Pygame, which is licensed under the <a href="help/licenses/lgpl2.html">GNU Lesser General Public License version 2.1</a>. For purposes of compliance, the full source code for Pygame_sdl2 is available <a href="https://github.com/renpy/pygame_sdl2" aria-label="Pygame_sdl2 source code on Github">here</a>.</p>
+			<p>This software uses the libusb library, available under the <a href="help/licenses/lgpl2-1.html">GNU Lesser General Public License version 2.1 or later</a>. For purposes of compliance, the full source code for libusb is available <a href="https://github.com/renpy/pygame_sdl2" aria-label="libusb source code on Github">here</a>.
 
 			<hr>
-			<p>The pyobjus library is &copy; 2010-2017 the Kivy Team and other contributors. See the <a href="help/licenses/mit.html?year=2010-2017&org=Kivy Team and other contributors">pyobjus license.</a></p>
+			<p>The libwebp library is &copy; 2010, Google Inc. All rights reserved. See the <a href="help/licenses/bsd3.html?years=2010&orgs=Google Inc.">libwebp</a> license.</p>
+
+			<hr>
+			<p>This software uses the Pygame_sdl2 library, &copy; Patrick Dawson and Tom Rothamel.</p>
+
+			<p>Portions of Pygame_sdl2 use code from Pygame, available under the <a href="help/licenses/lgpl2.html">GNU Lesser General Public License version 2.1</a>. For purposes of compliance, the full source code for Pygame_sdl2 is available <a href="https://github.com/renpy/pygame_sdl2" aria-label="Pygame_sdl2 source code on Github">here</a>.</p>
+
+			<hr>
+			<p>The pyobjus and pyjnius libraries are &copy; 2010-2017 the Kivy Team and other contributors. See the <a href="help/licenses/mit.html?year=2010-2017&org=Kivy Team and other contributors">pyobjus license.</a></p>
 			
 			<hr>
 			<p>This software runs on Python&reg; 2.7.18, &copy; 2001-2020 Python Software Foundation; All Rights Reserved. "Python" is a registered trademark of the Python Software Foundation. See the <a href="help/licenses/psf2.html">Python License</a>.</p>
 
 			<hr>
 			<p>This software is built using Ren'Py, &copy; 2004-2021 Tom Rothamel. See the <a href="help/licenses/mit.html?year=2004-2021&org=Tom Rothamel &lt;pytom@bishoujo.us&gt;">Ren'Py license</a>.</p>
+			
+			<hr>
+			<p>This product includes the Requests library, &copy; 2019 Kenneth Reitz. See the <a href="help/licenses/apache.html">Requests license.</a></p>
 
 			<hr>
-			<p>This software uses Simple DirectMedia Layer (SDL) and several of its related libraries. SDL is &copy; 1997-2020 Sam Lantinga. SDL_image is &copy; 1997-2019 Sam Lantinga. See the <a href="help/licenses/zlib.html">SDL license</a>.</p>
+			<p>Simple DirectMedia Layer (SDL) is &copy; 1997-2020 Sam Lantinga. SDL_image is &copy; 1997-2019 Sam Lantinga. See the <a href="help/licenses/zlib.html">SDL license</a>.</p>
+			
+			<hr>
+			<p>The urllib3 library is &copy; 2008-2020 Andrey Petrov and contributors. See the <a href="help/licenses/mit.html?year=2008-2020&org=Andrey Petrov and contributors">urllib3 license</a>.</p>
 
 			<hr>
-			<p>Web downloads are handled through zSync, &copy; 2004, 2005, 2007, and 2009 Colin Phipps. See the <a href="help/licenses/artistic2.html">zSync license</a>.</p>
+			<p>The zSync library is &copy; 2004, 2005, 2007, and 2009 Colin Phipps. See the <a href="help/licenses/artistic2.html">zSync license</a>.</p>
 
 			<hr>
-			<p>The Steamworks SDK is © 2019 Valve Corporation, all rights reserved. "Steam" and the Steam logo are registered trademarks of Valve.</p>
+			<p>The Steamworks SDK is © 2019 Valve Corporation, all rights reserved.</p>
+
+			<h2>Warranty</h2>
+			<p>{e.g., "We are not responsible if your computer blows up."}</p>
+
+			<h2>Privacy Policy</h2>
+			<p>{If your game includes one or more APIs that collect info on the user or their game configuration, such as Google Analytics, Game Jolt's API, or an automatic crash reporting system, you should include info about what information is collected, how it is used, and how the user can opt out of these features.}</p>
 		</section>
 	</main>
 	<script src="help/js/toc.js"></script>
