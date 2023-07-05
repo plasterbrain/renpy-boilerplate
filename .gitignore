@@ -1,4 +1,5 @@
 # Ren'Py Data
+.vscode/
 **.rpyc
 **.bak
 **.rpyb
@@ -21,6 +22,9 @@ dialogue.*
 tools/unix/resize.sh
 tools/config.json
 bonus.md
+MAYBE USEFUL/
 
 Saves
 Saves.lnk
+
+*.zip
