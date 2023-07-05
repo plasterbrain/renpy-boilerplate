@@ -84,4 +84,4 @@ define l = Character(_("Lucy"))
 define en = Character(_("Eileen"), kind=nvl)
 
 ## Subtitles character, used to provide captions for important sounds.
-define alt = Character(None, who_alt=_("Caption"), condition="getattr(persistent, 'prefs_subtitles')")
+define alt = Character(None, who_alt=_("Caption"), condition="getattr(persistent, 'prefs_subtitles')", window_style="say_none")
