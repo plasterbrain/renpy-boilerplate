@@ -20,7 +20,7 @@ init 0 python:
     ## --- Missing Backgrounds (7.4.0)
     ## What to show when developer mode is active and an undefined image is used
     ## in a scene statement. Accepts an image name as a string.
-    config.missing_background = "black"
+    # config.missing_background = "black"
 
     ## --- Missing Fonts
     ## Whether to search for missing fonts on the user's system even in
@@ -185,7 +185,7 @@ init python:
     ## --- Auto-Reload Functions (7.4.0)
     ## List of (regex, autoreload function) tuples to run before an auto-reload.
     ## By default, Ren'Py uses this to flushe the cache for images and audio.
-    config.autoreload_functions = []
+    # config.autoreload_functions = []
 
     ## List of Python module names to reload whenever the game is reloaded.
     config.reload_modules = []
@@ -272,7 +272,7 @@ init python:
 
     ## --- Init Block Profiling (7.4.0)
     ## Init blocks taking longer than this are logged to log.txt.
-    config.profile_init = 0.25
+    # config.profile_init = 0.25
 
     ## How long frames have to take (to the event) to trigger profiling.
     config.profile_time = 1.0 / 50.0
