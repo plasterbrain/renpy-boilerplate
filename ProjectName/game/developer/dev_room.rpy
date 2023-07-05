@@ -6,11 +6,13 @@
 label debug_room:
     if not config.developer:
         jump start
-    scene bg toy night
-    show molly base neutral at left with easeinleft
     menu:
         "What do you want to see?"
-        "nothing":
+        "General GUI test":
+            pass
+        "Thought interface test":
+            jump debug_room.thoughts
+        "Whatever":
             pass
     e "This is a character speaking."
     "This is a narrator speaking."
@@ -33,7 +35,6 @@ label debug_room:
     en "\"I can't draw enough pictures to describe all this,\" cries the developer. \"I would need like thirty CGs.\""
     en "She hopes the reader will forget they are playing a visual novel."
     en "Maybe they will just assume it's Kindle!"
-    $ eggs.get("")
     en "I suppose I'm not being fair. The priciest Ren'Py games get is like $25, compared to a $30-40 Japanese visual novel."
     en "That's about the price of a new hardcover book."
     en "It is! I have Barnes and Noble's top-selling books open right here. The number one has an MSRP of $28!"
