@@ -4,7 +4,7 @@
 ## This file contains screens used to display dialogue and choice menus.
 
 init python:
-
+    #TODO Newer Ren'Py may have made this obsolete
     def say_get_alt(what):
         """
         Strips out Ren'Py text tags from a string.
