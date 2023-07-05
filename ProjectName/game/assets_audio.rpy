@@ -47,7 +47,7 @@ init -1 python:
 
     ## Init offset -1: `blips_channel` used by general character callback
 
-    blips_channel = "talk"
+    blips_channel = "blips"
     renpy.music.register_channel(blips_channel, mixer="sfx", loop=False, stop_on_mute=True, tight=True, file_prefix="", file_suffix="")
 
 ## -- Voice --------------------------------------------------------------------

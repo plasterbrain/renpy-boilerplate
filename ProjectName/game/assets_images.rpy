@@ -110,7 +110,7 @@ init python:
 
 ## Define images that weren't automatically declared here!
 
-define _anim_load = "gui/anim/loading/load-%d.png"
+define _icon_load = "gui/icon/loading/load-%d.png"
 
 image load_icon:
     _anim_load % 1
@@ -198,3 +198,12 @@ init python:
     config.movetransition_respects_offsets = True
 
 ## Define transitions here!
+
+transform fadeinout(s):
+    ease s alpha 1.0
+    pause 2
+    ease s alpha 0
+
+transform fadein(s):
+    alpha 0
+    ease s alpha 1.0
