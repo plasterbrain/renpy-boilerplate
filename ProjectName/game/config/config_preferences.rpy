@@ -25,26 +25,15 @@ init python:
 
     ## --- Rollback
     ## Allow the user to roll back (i.e., "rewind" the game).
-    config.rollback_enabled = True
-
-    ## Number of steps that Ren'Py will allow the user to interactively
-    ## rollback. Set this to 0 to disable rollback entirely.
-    config.hard_rollback_limit = 100
-
-    ## Maximum amount of stored rollback statements before Ren'Py will consider
-    ## trimming the log. This also covers how many steps Ren'Py will rollback
-    ## when trying to load a save when the script has changed. Decreasing this
-    ## below the default value may cause Ren'Py to become unstable.
-    config.rollback_length = 128
-
-    ## Whether menu and imagemap choices are interactable in fixed rollback. If
-    ## False, only the previously selected option remains clickable. If set to
-    ## True, the selected option is marked, but no options are clickable.
-    config.fix_rollback_without_choice = False
+    config.rollback_enabled = False
 
     ## --- Allow Skipping
     ## Allow the user to skip (i.e., "fast-forward" the game).
+    #TODO (!) Only skip text after beating the game once.
     config.allow_skipping = True
+
+    #TODO stop when thoughts appear option
+    #TODO notification the first time you try to skip that u may miss thoughts
 
     ## Approximate amount of time that dialogue will be shown for, when skipping
     ## statements using the ctrl key, in milliseconds.
@@ -61,23 +50,6 @@ init python:
 
     ## Number of characters in a string it takes to trigger AFM delay.
     config.afm_characters = 250
-
-    #---------------------------------------------------------------------------
-    ## ---! Text Box Opacity
-    gui.say_alpha = gui.preference("say_alpha", 255)
-
-    def _change_say_alpha(value):
-        """
-        Updates the style for the say window background by supplying a new alpha
-        value set to the gui.say_alpha preference.
-
-        Parameters
-        ----------
-        value : int
-            The new alpha value to use, sent by StyleValue() when it calls this
-            function. The number ranges from 0 to 255.
-        """
-        style.window.background = Solid((0, 0, 0, value))
 
 ## ---! Text Speed
 ## Text display speed in characters per second (an integer). If set to 0, text
@@ -118,12 +90,6 @@ init python:
     ## Sounds used for the "Test" button in Preferences, to test audio levels.
     config.sample_sound = None
     config.sample_voice = None
-
-    ## (7.4.0) List of mixers exempt from the self-voicing volume drop.
-    config.voice_mixers = ["voice"]
-
-    ## List of mixers which cancel out self-voicing.
-    config.tts_voice_channels = ["voice"]
 
 ## ---! Emphasize Audio
 ## Whether to emphasize the channels in `config.emphasize_audio_channels` while
@@ -219,10 +185,16 @@ init python:
     ## List of additional PyGame events the game accepts.
     config.pygame_events = []
 
-    ## --- Underlay
-    ## List of Displayables that should always be added to the start of the
-    ## scene list. It's used for keymaps and the like.
-    # config.underlay.append()
+    ## ---! Underlay
+    ## Extra keymap functions.
+    config.underlay.append(renpy.Keymap(thought1 = NullAction()))
+    config.underlay.append(renpy.Keymap(thought2 = NullAction()))
+    config.underlay.append(renpy.Keymap(thought3 = NullAction()))
+    config.underlay.append(renpy.Keymap(history = Call("history")))
+    config.underlay.append(renpy.Keymap(phone = ShowMenu("phone")))
+    config.underlay.append(renpy.Keymap(preferences =
+        If(renpy.get_screen("preferences"),
+        Hide("preferences"), Show("preferences"))))
 
     ## --- Keyboard Repeat
     ## Rate of keyboard repeat, in seconds, a tuple containing the delay
@@ -253,16 +225,9 @@ init python:
     ## The amount of time the device will vibrate for after a longpress.
     config.longpress_vibrate = .1
 
-    ## --- (Mobile/Mouse) Rollback Side
+    ## ---! (Mobile/Mouse) Rollback Side
     ## Tapping or clicking the side of the screen causes the game to roll back.
-    config.enable_rollback_side = True
-    ## Size of the rollback side, as a fraction of the screen width.
-    config.rollback_side_size = .2
-
-## If rollback side is enabled, tapping or clicking this side of the game window
-## causes rollback to occur. Accepts "left", "right", or "disable".
-default preferences.desktop_rollback_side = "disable"
-default preferences.mobile_rollback_side = "disable"
+    config.enable_rollback_side = False
 
 ## --- Automatic Mouse Move
 # Whether the mouse should automatically move to the selected button.

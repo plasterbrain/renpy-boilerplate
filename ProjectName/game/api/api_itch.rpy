@@ -7,11 +7,11 @@ init python:
 
     ## ---! (itch.io) Username
     ## Lowercase itch.io username, used in URLs.
-    itch_user = "plasterbrain"
+    itch_user = ""
 
     ## --- (itch.io) Project Name
     ## Lowercase itch.io project name or slug, used in URLs.
-    itch_project = "pizzagame"
+    itch_project = ""
 
     ## ---! (itch.io) Channel Names
     ## The names of the game's channels corresponding with each platform.

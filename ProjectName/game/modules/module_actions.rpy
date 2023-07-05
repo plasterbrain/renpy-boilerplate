@@ -178,10 +178,10 @@ init python:
 
             if renderer not in ["auto", "gl", "gl2", "angle", "angle2", "gles", "gles2"]:
                 if config.developer:
-					if renderer is "sw":
-						raise Exception("The software renderer has been removed as of Ren'Py 7.4.")
-					else:
-                    	raise Exception("Invalid renderer %s" % s)
+                    if renderer is "sw":
+                        raise Exception("The software renderer has been removed as of Ren'Py 7.4.")
+                    else:
+                        raise Exception("Invalid renderer %s" % s)
                 else:
                     renderer = "auto"
             self.renderer = renderer

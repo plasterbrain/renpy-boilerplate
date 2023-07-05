@@ -1,7 +1,7 @@
 ################################################################################
 ## Configuration: GUI, Screens, and Styles
 ################################################################################
-init offset = -1 #TODO ?
+init offset = -1 #NOTE ?
 
 init python:
 
@@ -39,12 +39,13 @@ init python:
     ## The color that the window is cleared to before images are drawn.
     ## This is mainly seen as the color of the letterbox or pillarbox edges if
     ## the game's aspect ratio is different than what's being displayed.
-    config.gl_clear_color = "#000"
+    config.gl_clear_color = "#ffffff"
 
     ## --- Performance Test Image
     ## If `config.performance_test` and `_preferences.performance_test` are both
     ## true, this image will be used when running the OpenGL performance test on
     ## startup, for 5 frames (.25 seconds).
+    #IDEA Use the image of Chastity & family
     config.gl_test_image = "black"
 
 ## -- Screen Language Settings -------------------------------------------------
@@ -53,10 +54,6 @@ init python:
 
     ## Whether the order of Side positions determines their render order.
     config.keep_side_render_order = True
-
-    ## --- Hyperlink Style Inheritance (6.99.13)
-    ## Whether hyperlinks inherit size from the surrounding text.
-    config.hyperlink_inherit_size = True
 
     ## The maximum size of xfit, yfit, first_fit, etc.
     config.max_fit_size = 8192
@@ -88,14 +85,8 @@ init python:
     ## --- Overlay Functions
     ## List of overlay functions called when the window is shown. This is used
     ## to show the FPS and the skip indicators, for example.
+    #TODO ? Loading indicator maybe?
     # config.window_overlay_functions.append()
-
-    ## Whether overlays are shown during "with" statements.
-    config.overlay_during_with = True
-
-    ## --- Remove Screens on Copy
-    ## Screens to remove when the game state is stored for rollback or saving.
-    config.context_copy_remove_screens = ["notify"]
 
     ## Whether screens participate in transitions, dissolving from the old state
     ## of the screen to the new state of the screen. If False, only the latest
@@ -110,30 +101,6 @@ init python:
     ## List of functions, called without arguments, just before rebuilding
     ## styles, for example if the user changes style preferences.
     # config.build_styles_callbacks.append()
-
-    ## (6.99.13) Whether to apply position properties to the side of a viewport.
-    config.position_viewport_side = True
-
-    ## --- Hyperlink Styler
-    ## Function called with a single argument to get the style object to use for
-    ## a hyperlink. It's called with the argument of the hyperlink.
-    config.hyperlink_styler = None
-
-    ## --- Hyperlink Focus
-    ## Function called with a single argument when a hyperlink gains or loses
-    ## focus. It is called with either the argument of the hyperlink or None,
-    ## respectively. If it returns a value other than None, the interaction
-    ## returns that value.
-    config.hyperlink_focus = None
-
-    ## --- (Callback) Hyperlink Clicked
-    ## Function is called, with a single argument, when a hyperlink is clicked.
-    ## It is called with the argument of the hyperlink. If it returns a value
-    ## other than None, the interaction returns that value.
-    config.hyperlink_callback = None
-
-    ## Protocol used for hyperlinks that do not have a protocol assigned.
-    config.hyperlink_protocol = "call_in_new_context"
 
 ## -- Font Settings ------------------------------------------------------------
 
@@ -170,8 +137,8 @@ init python:
     gui.h1_color = "#0099cc"
     gui.h2_color = "#8d9fb3"
     gui.h3_color = "#5b6a77"
-    gui.tt1_color = "#535353"
-    gui.tt2_color = "#919191"
+    gui.tt1_color = "#202020"
+    gui.tt2_color = "#1f1f1f"
 
     gui.idle_color = "#888888"
     gui.idle_small_color = "#aaaaaa"

@@ -68,7 +68,8 @@ init -1 python:
         ("angle", renpy.windows and not config.gl2),
         ("angle2", renpy.windows and config.gl2),
         ("gles", not config.gl2),
-        ("gles2", config.gl2)]
+        ("gles2", config.gl2),
+        ("sw", True)]
     increments.renderer_names = {
         "angle2": "ANGLE2/DirectX",
         "gl2": "OpenGL 2.0",
@@ -76,7 +77,8 @@ init -1 python:
         "angle": "ANGLE/DirectX",
         "gl": "OpenGL",
         "gles": "GLES",
-        "auto": _("Auto")}
+        "auto": _("Auto"),
+        "sw": _("Software")}
 
     #---------------------------------------------------------------------------
     increments.renderer_list = [x[0] for x in increments.renderer_list if x[1]]
@@ -116,6 +118,8 @@ init -1 python:
             ----------
             variable : str
                 The name of the variable/field to adjust, a string.
+            title : str
+                Accessible title for this control.
             decrease : bool, optional
                 Whether this action decreases the value. Default False.
             store : obj, optional
@@ -123,7 +127,7 @@ init -1 python:
                 Default _preference if the field exists, or else persistent.
             step : int, optional
                 How much is added or subtracted from the value when you call
-                this action. If a list is supplied, the value is one.
+                this action. Default 1, or .25 for volume controls.
             max : int, optional
                 The max value for this variable, default 100. If a list is
                 supplied, this is set to the length of the list, minus 1.
