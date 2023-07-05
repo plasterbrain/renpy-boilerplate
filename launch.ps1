@@ -2,4 +2,5 @@
 .DESCRIPTION A script using Ren'Py to launch a non-compiled game from the command line. This lets you run games that aren't in your launcher's project directory by double-clicking a script.
 #>
 
+# Change "ProjectName" to the name of your game folder.
 renpy "ProjectName"

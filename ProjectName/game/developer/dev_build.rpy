@@ -7,56 +7,46 @@
 
 init python:
 
-    ## ---! Build Name
-    ## Used in case some of the below values are missing. No special characters.
+    ## ---! Build Name*
+    ## The program-readable name of your game.
+    ## This is used if some of the below values are missing.
+    ## (No spaces, punctuation, or special characters.)
     build.name = "ProjectName"
 
     ## ---! Executable Name
-    ## Name of the executable file. No special characters. If not set, this will default to `build.name`. `CFBundleExecutable` is set to this value.
+    ## Name for the .exe/.app/.sh file. No special characters.
     build.executable_name = "ProjectName"
 
-    ## ---! Directory Name
-    ## Name for the final dist package zip/directory. If not set, this will
-    ## default to something like "projectname-1.0.0". No special characters.
-    ## The package name gets appended to it, e.g. "projectname-1.0.0-win."
-    build.directory_name = "ProjectName"
-
     ## ---! Version
-    ## The version of your game. If you are distributing to Mac, this must be
-    ## semver format (e.g., "1.2.3").
+    ## Ignore; please update `version.txt` file to set this value.
     build.version = config.version
-    
-    ## Whether to include dependencies for running on 32-bit unix systems.
-    ## Setting this to False may prevent some antivirus programs from producing ## a false positive for your game.
-    build.include_i686 = True
-    
-    ## Whether to use custom icon for the 32-bit Windows build
-    build.change_icon_i686 = True
+
+    ## --- Directory Name
+    ## Name of your output folder if you're building your game through the
+    ## Ren'Py launcher wizard. The version and platform (e.g. "win" or "mac")
+    ## will be added to it automatically.
+    #build.directory_name = "ProjectName"
+
+    ## --- Build Destination
+    ## Path of your output folder if you're building your game through the
+    ## Ren'Py launcher wizard.
+    ## @see https://www.renpy.org/doc/html/build.html#var-build.destination
+    #build.destination = "dists"
 
 ## -- Mac/iOS ------------------------------------------------------------------
 
 init python:
 
     ## ---! Mac PLIST CFBundleDisplayName
-    ## Visible to users and used by Siri. `CFBundleDisplayName` and
-    ## `CFBundleName` are set to this value.
+    ## Visible to users and used by Siri.
     build.display_name = config.name
 
     ## --- Mac Automatic Graphics Switching
-    ## Whether the program should use the integrated GPU. Sets
-    ## `NSSupportsAutomaticGraphicsSwitching` to True.
+    ## Whether the program should use the integrated GPU.
     build.allow_integrated_gpu = True
-    
-    build.mac_info_plist = {
-        "CFBundleDisplayName": build.display_name,
-        #"CFBundleSpokenName": "",
-        #"CFBundleIdentifier": "com.you.game",
-        "CFBundleShortVersionString": build.version,
-        "CFBundleDevelopmentRegion": "en-US",
-        "LSMinimumSystemVersion": "10.6.0",
-        "LSApplicationCategoryType": "public.app-category.simulation-games",
-        "NSHumanReadableCopyright": __("All rights reserved."),
-    }
+
+    ## @TODO ?
+    #build.mac_info_plist
 
 ## -- Android/Chrome OS --------------------------------------------------------
 
@@ -107,6 +97,10 @@ init python:
     # build.classify("game/**", "game") ## Throw everything else in an archive
     # build.archive("game", "all") ## `game/game.rpa`
 
+    ## --- (6.99.9) Old Ren'Py Themes
+    ## Ignored if you use `gui.init()` elsewhere in this project.
+    #build.include_old_themes
+
 ## -- Build Packages -----------------------------------------------------------
 ## Each package should contain a) your game files, b) files for the package's
 ## intended platforms, and for non-mobile packages, c) the Ren'Py engine files.
@@ -119,7 +113,7 @@ init python:
 ## 3. "win" (zip) for Windows 32-bit
 ##
 ## 4. "market" (zip) for Windows, Mac, and Linux
-## 5. "steam" (zip) for all platforms, (hidden, deprecated in 6.99.13)
+## 5. "steam" (zip) for all platforms, (deprecated in 6.99.13)
 ##
 ## 6. "android" (directory) for Android/Chrome OS (hidden, DLC)
 ## 7. "ios" (directory) for iPhones/iPads (hidden, DLC)
@@ -128,7 +122,9 @@ init python:
 
 init python:
 
-    ## Change "PC" package to directory
     build.packages[0]["formats"] = ["directory"]
-    ## Change "Mac" package to directory
     build.packages[2]["formats"] = ["app-directory"]
+
+    ## --- x86 Files
+    ## Whether to include libraries to run on 32-bit processors for Linux/Mac.
+    build.include_i686 = True
