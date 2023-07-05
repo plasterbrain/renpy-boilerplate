@@ -1,0 +1,26 @@
+=== Menu/Internal Strings
+Located under the `translate {language} strings` block.
+
+==== Regexes
+This section includes various regex patterns to match punctuation in certain scenarios in order to consistently and automatically add natural pauses to the text display.
+
+You can test your patterns at https://regex101.com. Remember to select the "Python" flavor on the left-hand menu.
+
+Once you've finalized your translated regex pattern, you'll need to double any escape slashes for Ren'Py to read it properly (so, e.g., "\b" becomes "\\b").
+
+If you are averse to getting your hands dirty in regex, you can opt out of automatic pause insertion by translating them to empty strings.
+
+===== "Period Regex"
+This pattern looks for periods, optionally inside parentheses, followed by a space (i.e., not at the end of a line of dialogue), excluding those that are part of abbreviations (such as "Mr." or "lbs.") or acronyms (such as "R.S.V.P.").
+
+If your language uses the same terminal punctuation marks as English, you only need to change words, if any, to exclude from such pauses. For example, a Spanish translation might change the "etc|Mrs" to "etc|Sra".
+
+===== "Non-Period Terminal Regex"
+This pattern looks for non-period terminal punctuation (! and ?), optionally inside parentheses, followed by a space.
+
+To change the list of punctuation marks, edit the list inside the square brackets.
+
+To add additional "close parentheses" marks to either of these patterns, change "\\)" to a list of escaped punctuation marks, like "[\\)>\\]]". This example will cause the pattern to match ".>", ".)", and ".]".
+
+===== "Comma/Semi-colon Substring"
+These are substrings rather than regex patterns, and should be pretty self explanatory. They have a shorter pause added to them.
